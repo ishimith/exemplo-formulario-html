@@ -8,14 +8,27 @@
 </head>
 <body>
     <h1>Area Reservada</h1>
-    <form name="form-login" method="get">
+    <form name="form-login" method="post">
         <fieldset>
             <legend>Login</legend>
             <label>E-mail</label>
-            <input type="email" id="email" name="email" required/><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                maxlength="100"
+                tittle="Informe seu email com 100 caracteres"
+                size="50"
+                placeholder="Ex: nome@teste.com.br"
+                required/><br>
             <label>Senha:</label>
-            <input type="password" id="senha" name="senha" required/><br>
-            <input type="checkbox" id="lembrar" name="lembrar">
+            <input
+            type="password"
+            id="senha"
+            name="senha"
+            title="Informe sua senha com 6 caracteres"
+            required/><br>
+            <input type="checkbox" id="lembrar" name="lembrar" checked>
             Lembrar usuário?
         </fieldset>
         <input type="submit" value="Login"/>
